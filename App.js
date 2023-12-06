@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import { StyleSheet, Text, View, Image} from 'react-native';
+import Botao from './componentes/botao';
+import Card from './componentes/cards';
+import Cadastro from './Pages/cadastro';
+import Login from './Pages/login'
+import Input from './componentes/input';
+import Transferencia from './Pages/transferencia';
+import CartaoCredito from './Pages/cartaoCredito';
+import Home from './Pages/home';
+import Emprestimo from './Pages/emprestimo';
+import Extrato from './Pages/extrato';
+import Routers from './routers';
+
+ function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Routers></Routers>
+    // <Transferencia></Transferencia>
+    // <Login></Login>
+    // <CartaoCredito></CartaoCredito>
+    // <Extrato></Extrato>
+    // <Cadastro></Cadastro>
+    // <Home></Home>
+    // <Emprestimo></Emprestimo>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
